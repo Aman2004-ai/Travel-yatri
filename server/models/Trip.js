@@ -39,7 +39,7 @@ const tripSchema = new mongoose.Schema(
         name: String,
         area: String,
         safeForSoloTravelers: String,
-        type: String,
+        type: { type: String },
         approxPriceRange: String,
         reason: String,
       },
