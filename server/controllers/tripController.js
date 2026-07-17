@@ -10,17 +10,28 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const ensureArray = (val) => {
   if (!val) return [];
-  if (Array.isArray(val)) return val;
+  
+  // Handle array-wrapped stringified arrays
+  if (Array.isArray(val)) {
+    if (val.length === 1 && typeof val[0] === "string" && val[0].trim().startsWith("[")) {
+      return ensureArray(val[0]);
+    }
+    return val;
+  }
+  
   if (typeof val === "string") {
-    try {
-      const parsed = JSON.parse(val);
-      if (Array.isArray(parsed)) return parsed;
-    } catch (e) {
+    const trimmed = val.trim();
+    if (trimmed.startsWith("[")) {
       try {
-        const parsedJS = new Function("return " + val)();
-        if (Array.isArray(parsedJS)) return parsedJS;
-      } catch (err) {
-        console.error("Failed to parse stringified array:", val);
+        const parsed = JSON.parse(trimmed);
+        if (Array.isArray(parsed)) return parsed;
+      } catch (e) {
+        try {
+          const parsedJS = new Function("return " + trimmed)();
+          if (Array.isArray(parsedJS)) return parsedJS;
+        } catch (err) {
+          console.error("Failed to parse stringified array:", trimmed);
+        }
       }
     }
   }
