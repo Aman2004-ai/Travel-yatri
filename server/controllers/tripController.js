@@ -9,33 +9,39 @@ const { generateMockTrip } = require("../utils/mockGenerator");
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const ensureArray = (val) => {
-  if (!val) return [];
-  
-  // Handle array-wrapped stringified arrays
-  if (Array.isArray(val)) {
+  console.log("ensureArray INPUT:", typeof val, Array.isArray(val) ? "Array" : "Not Array", JSON.stringify(val).substring(0, 100));
+  let result = [];
+  if (!val) {
+    result = [];
+  } else if (Array.isArray(val)) {
     if (val.length === 1 && typeof val[0] === "string" && val[0].trim().startsWith("[")) {
-      return ensureArray(val[0]);
+      result = ensureArray(val[0]);
+    } else {
+      result = val;
     }
-    return val;
-  }
-  
-  if (typeof val === "string") {
+  } else if (typeof val === "string") {
     const trimmed = val.trim();
     if (trimmed.startsWith("[")) {
       try {
         const parsed = JSON.parse(trimmed);
-        if (Array.isArray(parsed)) return parsed;
+        if (Array.isArray(parsed)) result = parsed;
       } catch (e) {
         try {
           const parsedJS = new Function("return " + trimmed)();
-          if (Array.isArray(parsedJS)) return parsedJS;
+          if (Array.isArray(parsedJS)) result = parsedJS;
         } catch (err) {
           console.error("Failed to parse stringified array:", trimmed);
+          result = [];
         }
       }
+    } else {
+      result = [];
     }
+  } else {
+    result = [];
   }
-  return [];
+  console.log("ensureArray OUTPUT:", typeof result, Array.isArray(result) ? "Array" : "Not Array", JSON.stringify(result).substring(0, 100));
+  return result;
 };
 
 // Generate AI trip itinerary
