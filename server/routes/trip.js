@@ -9,10 +9,13 @@ const {
   getGemsByDestination,
   createGem,
   getLeaderboard,
+  saveTripToAccount,
 } = require("../controllers/tripController");
+const { requireAuth, optionalAuth } = require("../middleware/auth");
 
-router.post("/generate", generateTrip);
-router.get("/", getAllTrips);
+router.post("/generate", optionalAuth, generateTrip);
+router.get("/", requireAuth, getAllTrips);
+router.post("/save-to-account", requireAuth, saveTripToAccount);
 
 // Local Contributor Gems routes (must sit above :id catch-all)
 router.get("/gems/:destination", getGemsByDestination);

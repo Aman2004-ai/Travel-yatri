@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import TripMap from "../components/TripMap";
+import { useAuth } from "../context/AuthContext";
 
 // Error Boundary to prevent Leaflet from crashing the whole page
 class MapErrorBoundary extends React.Component {
@@ -34,10 +35,15 @@ class MapErrorBoundary extends React.Component {
 
 function Results() {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { user } = useAuth();
+
   const [trip, setTrip] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("itinerary");
+  const [linkingAccount, setLinkingAccount] = useState(false);
 
   // Itinerary Customizer States
   const [localItinerary, setLocalItinerary] = useState([]);
@@ -230,6 +236,27 @@ function Results() {
     }
   };
 
+  // Link anonymous trip to account
+  const handleSaveToAccount = async () => {
+    if (!user) {
+      navigate("/login", { state: { from: location } });
+      return;
+    }
+    setLinkingAccount(true);
+    try {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/trips/save-to-account`, {
+        tripId: trip._id,
+      });
+      alert("Journey successfully linked to your account! 📁");
+      setTrip(res.data.trip);
+    } catch (err) {
+      console.error("Failed to link trip:", err);
+      alert(err.response?.data?.message || "Failed to save trip to account.");
+    } finally {
+      setLinkingAccount(false);
+    }
+  };
+
   // WhatsApp Exporter
   const handleWhatsAppShare = () => {
     let shareText = `*TravelYatri AI Travel Plan: ${trip.destination}* 🎒\n`;
@@ -345,10 +372,26 @@ function Results() {
           </div>
           
           <div className="flex gap-3 items-center flex-wrap no-print">
+            {/* Link to Account Button */}
+            {!trip.user ? (
+              <button
+                onClick={handleSaveToAccount}
+                disabled={linkingAccount}
+                className="bg-amber-450 hover:bg-amber-400 text-teal-950 font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow-lg shadow-amber-500/10 cursor-none"
+                title="Save this trip to your profile"
+              >
+                {linkingAccount ? "Saving..." : user ? "Save to Profile 💾" : "Login to Save 🔒"}
+              </button>
+            ) : (
+              <span className="text-[10px] font-bold text-teal-400 bg-teal-500/10 border border-teal-500/20 px-4 py-3 rounded-xl uppercase tracking-wider font-mono">
+                ✓ Saved to Account
+              </span>
+            )}
+
             {/* WhatsApp Exporter */}
             <button
               onClick={handleWhatsAppShare}
-              className="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-600/10"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-600/10 cursor-none"
               title="Share itinerary to WhatsApp"
             >
               Share 💬
@@ -357,7 +400,7 @@ function Results() {
             {/* Print / PDF Exporter */}
             <button
               onClick={() => window.print()}
-              className="bg-teal-700/40 text-teal-400 border border-teal-500/20 hover:bg-teal-700/60 font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all"
+              className="bg-teal-700/40 text-teal-400 border border-teal-500/20 hover:bg-teal-700/60 font-extrabold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all cursor-none"
               title="Download Plan as PDF"
             >
               PDF 📄

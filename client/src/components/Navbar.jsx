@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function Navbar() {
   const location = useLocation();
+  const { user, logout } = useAuth();
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -19,26 +21,49 @@ function Navbar() {
             <span className="text-amber-400">Yatri</span>
           </span>
         </Link>
-        <div className="flex gap-8">
-          {navLinks.map((link) => {
-            const isActive = location.pathname === link.path;
-            return (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-[11px] md:text-xs font-bold tracking-widest uppercase transition-all duration-300 relative py-1 ${
-                  isActive
-                    ? "text-teal-400"
-                    : "text-gray-400 hover:text-white"
-                }`}
+        <div className="flex items-center gap-6 md:gap-8">
+          <div className="flex gap-5 md:gap-8">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`text-[11px] md:text-xs font-bold tracking-widest uppercase transition-all duration-300 relative py-1 ${
+                    isActive
+                      ? "text-teal-400"
+                      : "text-gray-400 hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-400 to-amber-400 rounded-full shadow-[0_0_12px_rgba(20,184,166,0.6)]" />
+                  )}
+                </Link>
+              );
+            })}
+          </div>
+          <span className="h-4 w-[1px] bg-white/10 hidden sm:block" />
+          {user ? (
+            <div className="flex items-center gap-3">
+              <span className="text-[10px] font-bold text-gray-300 font-mono hidden md:inline">
+                👤 {user.name}
+              </span>
+              <button
+                onClick={logout}
+                className="text-[10px] font-black uppercase tracking-widest text-rose-450 bg-rose-500/10 border border-rose-500/25 px-2.5 py-1.5 rounded-xl hover:bg-rose-500/20 transition-all cursor-none"
               >
-                {link.label}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-400 to-amber-400 rounded-full shadow-[0_0_12px_rgba(20,184,166,0.6)]" />
-                )}
-              </Link>
-            );
-          })}
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="text-[10px] font-black uppercase tracking-widest text-teal-450 bg-teal-500/10 border border-teal-500/25 px-3 py-1.5 rounded-xl hover:bg-teal-500/20 transition-all cursor-none"
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

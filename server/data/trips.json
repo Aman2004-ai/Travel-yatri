@@ -1,6 +1,594 @@
 [
   {
     "startLocation": "Lucknow",
+    "destination": "Jaipur",
+    "days": "1",
+    "budget": "Medium",
+    "travelers": "Solo",
+    "trains": [
+      {
+        "trainNo": "12915",
+        "trainName": "Express from Lucknow to Jaipur",
+        "departureTime": "07:30 AM",
+        "arrivalTime": "10:15 PM",
+        "duration": "14h 45m",
+        "classRecommend": "3A (Third AC)",
+        "safeRating": "Highly Safe / Well Guarded",
+        "approxFare": 1450
+      },
+      {
+        "trainNo": "22902",
+        "trainName": "Superfast Route (Lucknow ➔ Jaipur)",
+        "departureTime": "09:40 PM",
+        "arrivalTime": "11:20 AM",
+        "duration": "13h 40m",
+        "classRecommend": "2A (Second AC)",
+        "safeRating": "Safe / CCTVs in coaches",
+        "approxFare": 1650
+      }
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "theme": "Arrival, Check-in & Evening Heritage Walk",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Check-in & Settle Down",
+            "description": "Arrive at the hotel/hostel in Jaipur, check-in, unpack and refresh.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore Hawa Mahal",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 100
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 350
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 400
+          }
+        ]
+      }
+    ],
+    "accommodations": [
+      {
+        "name": "Zostel Jaipur",
+        "area": "Central safe neighborhood",
+        "safeForSoloTravelers": "Highly Safe (24/7 Security)",
+        "type": "Hostel",
+        "approxPriceRange": "₹1200 - ₹1800",
+        "reason": "Social atmosphere, modern security card locks, very popular among backpackers."
+      },
+      {
+        "name": "Jaipur Heritage Inn",
+        "area": "Safe tourist corridor",
+        "safeForSoloTravelers": "Safe (Family-run)",
+        "type": "Hotel",
+        "approxPriceRange": "₹2500 - ₹3500",
+        "reason": "Highly rated on security, cozy private rooms, helpful local manager."
+      }
+    ],
+    "localTransport": [
+      {
+        "mode": "Jaipur Metro / E-Rickshaws",
+        "costEstimate": "₹20 - ₹50 per trip",
+        "description": "Cheap, fast and environmentally friendly way to get around town.",
+        "safetyTip": "Highly crowded during rush hours, separate sections/coaches are available."
+      },
+      {
+        "mode": "Prepaid Autos / App Cabs",
+        "costEstimate": "₹100 - ₹250 per trip",
+        "description": "Convenient point-to-point transit from local stations and hotels.",
+        "safetyTip": "Always confirm the ride match OTP or fare before getting in."
+      }
+    ],
+    "mapPins": [
+      {
+        "name": "Hawa Mahal",
+        "lat": 26.9241,
+        "lng": 75.827,
+        "description": "The iconic Palace of Winds with red and pink sandstone.",
+        "day": 1
+      },
+      {
+        "name": "Amer Fort",
+        "lat": 26.9859,
+        "lng": 75.84,
+        "description": "Grand hilltop fort complex with scenic views.",
+        "day": 1
+      },
+      {
+        "name": "City Palace",
+        "lat": 26.9221,
+        "lng": 75.8265,
+        "description": "Royal residence showcasing Rajasthani and Mughal art.",
+        "day": 1
+      },
+      {
+        "name": "Jantar Mantar",
+        "lat": 26.9225,
+        "lng": 75.8271,
+        "description": "Historic UNESCO observatory with giant stone sundials.",
+        "day": 1
+      }
+    ],
+    "budgetBreakdown": {
+      "stay": 2000,
+      "food": 1200,
+      "transport": 1000,
+      "activities": 800,
+      "miscellaneous": 500
+    },
+    "packingList": [
+      "Comfortable walking shoes",
+      "Power bank & charger",
+      "Modest clothing for spiritual sites",
+      "Personal medicine kit",
+      "Refillable water bottle",
+      "Digital copies of identity documents"
+    ],
+    "rawTextItinerary": "{\"trains\":[{\"trainNo\":\"12915\",\"trainName\":\"Express from Lucknow to Jaipur\",\"departureTime\":\"07:30 AM\",\"arrivalTime\":\"10:15 PM\",\"duration\":\"14h 45m\",\"classRecommend\":\"3A (Third AC)\",\"safeRating\":\"Highly Safe / Well Guarded\",\"approxFare\":1450},{\"trainNo\":\"22902\",\"trainName\":\"Superfast Route (Lucknow ➔ Jaipur)\",\"departureTime\":\"09:40 PM\",\"arrivalTime\":\"11:20 AM\",\"duration\":\"13h 40m\",\"classRecommend\":\"2A (Second AC)\",\"safeRating\":\"Safe / CCTVs in coaches\",\"approxFare\":1650}],\"itinerary\":[{\"dayNumber\":1,\"theme\":\"Arrival, Check-in & Evening Heritage Walk\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Check-in & Settle Down\",\"description\":\"Arrive at the hotel/hostel in Jaipur, check-in, unpack and refresh.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore Hawa Mahal\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":100},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":350},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":400}]}],\"accommodations\":[{\"name\":\"Zostel Jaipur\",\"area\":\"Central safe neighborhood\",\"safeForSoloTravelers\":\"Highly Safe (24/7 Security)\",\"type\":\"Hostel\",\"approxPriceRange\":\"₹1200 - ₹1800\",\"reason\":\"Social atmosphere, modern security card locks, very popular among backpackers.\"},{\"name\":\"Jaipur Heritage Inn\",\"area\":\"Safe tourist corridor\",\"safeForSoloTravelers\":\"Safe (Family-run)\",\"type\":\"Hotel\",\"approxPriceRange\":\"₹2500 - ₹3500\",\"reason\":\"Highly rated on security, cozy private rooms, helpful local manager.\"}],\"localTransport\":[{\"mode\":\"Jaipur Metro / E-Rickshaws\",\"costEstimate\":\"₹20 - ₹50 per trip\",\"description\":\"Cheap, fast and environmentally friendly way to get around town.\",\"safetyTip\":\"Highly crowded during rush hours, separate sections/coaches are available.\"},{\"mode\":\"Prepaid Autos / App Cabs\",\"costEstimate\":\"₹100 - ₹250 per trip\",\"description\":\"Convenient point-to-point transit from local stations and hotels.\",\"safetyTip\":\"Always confirm the ride match OTP or fare before getting in.\"}],\"mapPins\":[{\"name\":\"Hawa Mahal\",\"lat\":26.9241,\"lng\":75.827,\"description\":\"The iconic Palace of Winds with red and pink sandstone.\",\"day\":1},{\"name\":\"Amer Fort\",\"lat\":26.9859,\"lng\":75.84,\"description\":\"Grand hilltop fort complex with scenic views.\",\"day\":1},{\"name\":\"City Palace\",\"lat\":26.9221,\"lng\":75.8265,\"description\":\"Royal residence showcasing Rajasthani and Mughal art.\",\"day\":1},{\"name\":\"Jantar Mantar\",\"lat\":26.9225,\"lng\":75.8271,\"description\":\"Historic UNESCO observatory with giant stone sundials.\",\"day\":1}],\"budgetBreakdown\":{\"stay\":2000,\"food\":1200,\"transport\":1000,\"activities\":800,\"miscellaneous\":500},\"packingList\":[\"Comfortable walking shoes\",\"Power bank & charger\",\"Modest clothing for spiritual sites\",\"Personal medicine kit\",\"Refillable water bottle\",\"Digital copies of identity documents\"]}",
+    "_id": "cad42363ec09a484f599b191",
+    "createdAt": "2026-07-17T18:34:57.357Z",
+    "updatedAt": "2026-07-17T18:34:57.357Z"
+  },
+  {
+    "startLocation": "Lucknow",
+    "destination": "Tokyo",
+    "days": "3",
+    "budget": "Medium",
+    "travelers": "Solo",
+    "trains": [
+      {
+        "trainNo": "12915",
+        "trainName": "Express from Lucknow to Tokyo",
+        "departureTime": "07:30 AM",
+        "arrivalTime": "10:15 PM",
+        "duration": "14h 45m",
+        "classRecommend": "3A (Third AC)",
+        "safeRating": "Highly Safe / Well Guarded",
+        "approxFare": 1450
+      },
+      {
+        "trainNo": "22902",
+        "trainName": "Superfast Route (Lucknow ➔ Tokyo)",
+        "departureTime": "09:40 PM",
+        "arrivalTime": "11:20 AM",
+        "duration": "13h 40m",
+        "classRecommend": "2A (Second AC)",
+        "safeRating": "Safe / CCTVs in coaches",
+        "approxFare": 1650
+      }
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "theme": "Arrival, Check-in & Evening Heritage Walk",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Check-in & Settle Down",
+            "description": "Arrive at the hotel/hostel in Tokyo, check-in, unpack and refresh.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore City Center",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 100
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 350
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 400
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "theme": "Sightseeing, Iconic Landmarks & Sunset Spot",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Morning Breakfast & Briefing",
+            "description": "Enjoy traditional local breakfast nearby and plan the day's route.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore Historic Museum",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 100
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 350
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 400
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "theme": "Local Food Exploration & Traditional Shopping",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Morning Breakfast & Briefing",
+            "description": "Enjoy traditional local breakfast nearby and plan the day's route.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore Scenic Park & Lake",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 100
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 350
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 400
+          }
+        ]
+      }
+    ],
+    "accommodations": [
+      {
+        "name": "Zostel Tokyo",
+        "area": "Central safe neighborhood",
+        "safeForSoloTravelers": "Highly Safe (24/7 Security)",
+        "type": "Hostel",
+        "approxPriceRange": "₹1200 - ₹1800",
+        "reason": "Social atmosphere, modern security card locks, very popular among backpackers."
+      },
+      {
+        "name": "Tokyo Heritage Inn",
+        "area": "Safe tourist corridor",
+        "safeForSoloTravelers": "Safe (Family-run)",
+        "type": "Hotel",
+        "approxPriceRange": "₹2500 - ₹3500",
+        "reason": "Highly rated on security, cozy private rooms, helpful local manager."
+      }
+    ],
+    "localTransport": [
+      {
+        "mode": "Tokyo Metro / E-Rickshaws",
+        "costEstimate": "₹20 - ₹50 per trip",
+        "description": "Cheap, fast and environmentally friendly way to get around town.",
+        "safetyTip": "Highly crowded during rush hours, separate sections/coaches are available."
+      },
+      {
+        "mode": "Prepaid Autos / App Cabs",
+        "costEstimate": "₹100 - ₹250 per trip",
+        "description": "Convenient point-to-point transit from local stations and hotels.",
+        "safetyTip": "Always confirm the ride match OTP or fare before getting in."
+      }
+    ],
+    "mapPins": [
+      {
+        "name": "City Center",
+        "lat": 23.0225,
+        "lng": 72.5714,
+        "description": "A bustling central spot to explore local culture.",
+        "day": 1
+      },
+      {
+        "name": "Historic Museum",
+        "lat": 23.0375,
+        "lng": 72.5614,
+        "description": "Explore local historical exhibits and arts.",
+        "day": 1
+      },
+      {
+        "name": "Scenic Park & Lake",
+        "lat": 23.0025,
+        "lng": 72.5914,
+        "description": "Relaxing views and peaceful evening walks.",
+        "day": 2
+      },
+      {
+        "name": "Local Street Market",
+        "lat": 23.0325,
+        "lng": 72.6014,
+        "description": "Famous for traditional shopping and local street food.",
+        "day": 2
+      },
+      {
+        "name": "Botanical Garden",
+        "lat": 22.9925,
+        "lng": 72.5514,
+        "description": "A lush green environment with exotic flora.",
+        "day": 3
+      }
+    ],
+    "budgetBreakdown": {
+      "stay": 6000,
+      "food": 3600,
+      "transport": 3000,
+      "activities": 2400,
+      "miscellaneous": 1500
+    },
+    "packingList": [
+      "Comfortable walking shoes",
+      "Power bank & charger",
+      "Modest clothing for spiritual sites",
+      "Personal medicine kit",
+      "Refillable water bottle",
+      "Digital copies of identity documents"
+    ],
+    "rawTextItinerary": "{\"trains\":[{\"trainNo\":\"12915\",\"trainName\":\"Express from Lucknow to Tokyo\",\"departureTime\":\"07:30 AM\",\"arrivalTime\":\"10:15 PM\",\"duration\":\"14h 45m\",\"classRecommend\":\"3A (Third AC)\",\"safeRating\":\"Highly Safe / Well Guarded\",\"approxFare\":1450},{\"trainNo\":\"22902\",\"trainName\":\"Superfast Route (Lucknow ➔ Tokyo)\",\"departureTime\":\"09:40 PM\",\"arrivalTime\":\"11:20 AM\",\"duration\":\"13h 40m\",\"classRecommend\":\"2A (Second AC)\",\"safeRating\":\"Safe / CCTVs in coaches\",\"approxFare\":1650}],\"itinerary\":[{\"dayNumber\":1,\"theme\":\"Arrival, Check-in & Evening Heritage Walk\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Check-in & Settle Down\",\"description\":\"Arrive at the hotel/hostel in Tokyo, check-in, unpack and refresh.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore City Center\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":100},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":350},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":400}]},{\"dayNumber\":2,\"theme\":\"Sightseeing, Iconic Landmarks & Sunset Spot\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Morning Breakfast & Briefing\",\"description\":\"Enjoy traditional local breakfast nearby and plan the day's route.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore Historic Museum\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":100},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":350},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":400}]},{\"dayNumber\":3,\"theme\":\"Local Food Exploration & Traditional Shopping\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Morning Breakfast & Briefing\",\"description\":\"Enjoy traditional local breakfast nearby and plan the day's route.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore Scenic Park & Lake\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":100},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":350},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":400}]}],\"accommodations\":[{\"name\":\"Zostel Tokyo\",\"area\":\"Central safe neighborhood\",\"safeForSoloTravelers\":\"Highly Safe (24/7 Security)\",\"type\":\"Hostel\",\"approxPriceRange\":\"₹1200 - ₹1800\",\"reason\":\"Social atmosphere, modern security card locks, very popular among backpackers.\"},{\"name\":\"Tokyo Heritage Inn\",\"area\":\"Safe tourist corridor\",\"safeForSoloTravelers\":\"Safe (Family-run)\",\"type\":\"Hotel\",\"approxPriceRange\":\"₹2500 - ₹3500\",\"reason\":\"Highly rated on security, cozy private rooms, helpful local manager.\"}],\"localTransport\":[{\"mode\":\"Tokyo Metro / E-Rickshaws\",\"costEstimate\":\"₹20 - ₹50 per trip\",\"description\":\"Cheap, fast and environmentally friendly way to get around town.\",\"safetyTip\":\"Highly crowded during rush hours, separate sections/coaches are available.\"},{\"mode\":\"Prepaid Autos / App Cabs\",\"costEstimate\":\"₹100 - ₹250 per trip\",\"description\":\"Convenient point-to-point transit from local stations and hotels.\",\"safetyTip\":\"Always confirm the ride match OTP or fare before getting in.\"}],\"mapPins\":[{\"name\":\"City Center\",\"lat\":23.0225,\"lng\":72.5714,\"description\":\"A bustling central spot to explore local culture.\",\"day\":1},{\"name\":\"Historic Museum\",\"lat\":23.0375,\"lng\":72.5614,\"description\":\"Explore local historical exhibits and arts.\",\"day\":1},{\"name\":\"Scenic Park & Lake\",\"lat\":23.0025,\"lng\":72.5914,\"description\":\"Relaxing views and peaceful evening walks.\",\"day\":2},{\"name\":\"Local Street Market\",\"lat\":23.0325,\"lng\":72.6014,\"description\":\"Famous for traditional shopping and local street food.\",\"day\":2},{\"name\":\"Botanical Garden\",\"lat\":22.9925,\"lng\":72.5514,\"description\":\"A lush green environment with exotic flora.\",\"day\":3}],\"budgetBreakdown\":{\"stay\":6000,\"food\":3600,\"transport\":3000,\"activities\":2400,\"miscellaneous\":1500},\"packingList\":[\"Comfortable walking shoes\",\"Power bank & charger\",\"Modest clothing for spiritual sites\",\"Personal medicine kit\",\"Refillable water bottle\",\"Digital copies of identity documents\"]}",
+    "_id": "8137b68335a00f011b6016d7",
+    "createdAt": "2026-07-17T18:27:10.616Z",
+    "updatedAt": "2026-07-17T18:27:10.616Z"
+  },
+  {
+    "startLocation": "Tokyo",
+    "destination": "Tokyo",
+    "days": "3",
+    "budget": "Low",
+    "travelers": "Solo",
+    "trains": [
+      {
+        "trainNo": "12915",
+        "trainName": "Express from Tokyo to Tokyo",
+        "departureTime": "07:30 AM",
+        "arrivalTime": "10:15 PM",
+        "duration": "14h 45m",
+        "classRecommend": "3A (Third AC)",
+        "safeRating": "Highly Safe / Well Guarded",
+        "approxFare": 850
+      },
+      {
+        "trainNo": "22902",
+        "trainName": "Superfast Route (Tokyo ➔ Tokyo)",
+        "departureTime": "09:40 PM",
+        "arrivalTime": "11:20 AM",
+        "duration": "13h 40m",
+        "classRecommend": "2A (Second AC)",
+        "safeRating": "Safe / CCTVs in coaches",
+        "approxFare": 950
+      }
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "theme": "Arrival, Check-in & Evening Heritage Walk",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Check-in & Settle Down",
+            "description": "Arrive at the hotel/hostel in Tokyo, check-in, unpack and refresh.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore City Center",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 20
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 150
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 100
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "theme": "Sightseeing, Iconic Landmarks & Sunset Spot",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Morning Breakfast & Briefing",
+            "description": "Enjoy traditional local breakfast nearby and plan the day's route.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore Historic Museum",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 20
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 150
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 100
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "theme": "Local Food Exploration & Traditional Shopping",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Morning Breakfast & Briefing",
+            "description": "Enjoy traditional local breakfast nearby and plan the day's route.",
+            "safetyTip": "Keep your luggage locked in hostel lockers.",
+            "cost": 0
+          },
+          {
+            "time": "11:30 AM",
+            "title": "Explore Scenic Park & Lake",
+            "description": "Visit the landmark and admire the history and craftsmanship. Perfect for photos.",
+            "safetyTip": "Beware of unauthorized tour guides requesting high commissions.",
+            "cost": 20
+          },
+          {
+            "time": "03:30 PM",
+            "title": "Lunch & Culinary Tour",
+            "description": "Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.",
+            "safetyTip": "Drink only bottled mineral water.",
+            "cost": 150
+          },
+          {
+            "time": "06:00 PM",
+            "title": "Sunset Viewpoint or Evening Garden stroll",
+            "description": "Watch the spectacular sunset and relax in a tranquil park environment.",
+            "safetyTip": "Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.",
+            "cost": 100
+          }
+        ]
+      }
+    ],
+    "accommodations": [
+      {
+        "name": "Zostel Tokyo",
+        "area": "Central safe neighborhood",
+        "safeForSoloTravelers": "Highly Safe (24/7 Security)",
+        "type": "Hostel",
+        "approxPriceRange": "₹600 - ₹900",
+        "reason": "Social atmosphere, modern security card locks, very popular among backpackers."
+      },
+      {
+        "name": "Tokyo Heritage Inn",
+        "area": "Safe tourist corridor",
+        "safeForSoloTravelers": "Safe (Family-run)",
+        "type": "Hotel",
+        "approxPriceRange": "₹1000 - ₹1500",
+        "reason": "Highly rated on security, cozy private rooms, helpful local manager."
+      }
+    ],
+    "localTransport": [
+      {
+        "mode": "Tokyo Metro / E-Rickshaws",
+        "costEstimate": "₹20 - ₹50 per trip",
+        "description": "Cheap, fast and environmentally friendly way to get around town.",
+        "safetyTip": "Highly crowded during rush hours, separate sections/coaches are available."
+      },
+      {
+        "mode": "Prepaid Autos / App Cabs",
+        "costEstimate": "₹100 - ₹250 per trip",
+        "description": "Convenient point-to-point transit from local stations and hotels.",
+        "safetyTip": "Always confirm the ride match OTP or fare before getting in."
+      }
+    ],
+    "mapPins": [
+      {
+        "name": "City Center",
+        "lat": 23.0225,
+        "lng": 72.5714,
+        "description": "A bustling central spot to explore local culture.",
+        "day": 1
+      },
+      {
+        "name": "Historic Museum",
+        "lat": 23.0375,
+        "lng": 72.5614,
+        "description": "Explore local historical exhibits and arts.",
+        "day": 1
+      },
+      {
+        "name": "Scenic Park & Lake",
+        "lat": 23.0025,
+        "lng": 72.5914,
+        "description": "Relaxing views and peaceful evening walks.",
+        "day": 2
+      },
+      {
+        "name": "Local Street Market",
+        "lat": 23.0325,
+        "lng": 72.6014,
+        "description": "Famous for traditional shopping and local street food.",
+        "day": 2
+      },
+      {
+        "name": "Botanical Garden",
+        "lat": 22.9925,
+        "lng": 72.5514,
+        "description": "A lush green environment with exotic flora.",
+        "day": 3
+      }
+    ],
+    "budgetBreakdown": {
+      "stay": 2400,
+      "food": 1500,
+      "transport": 1200,
+      "activities": 900,
+      "miscellaneous": 600
+    },
+    "packingList": [
+      "Comfortable walking shoes",
+      "Power bank & charger",
+      "Modest clothing for spiritual sites",
+      "Personal medicine kit",
+      "Refillable water bottle",
+      "Digital copies of identity documents"
+    ],
+    "rawTextItinerary": "{\"trains\":[{\"trainNo\":\"12915\",\"trainName\":\"Express from Tokyo to Tokyo\",\"departureTime\":\"07:30 AM\",\"arrivalTime\":\"10:15 PM\",\"duration\":\"14h 45m\",\"classRecommend\":\"3A (Third AC)\",\"safeRating\":\"Highly Safe / Well Guarded\",\"approxFare\":850},{\"trainNo\":\"22902\",\"trainName\":\"Superfast Route (Tokyo ➔ Tokyo)\",\"departureTime\":\"09:40 PM\",\"arrivalTime\":\"11:20 AM\",\"duration\":\"13h 40m\",\"classRecommend\":\"2A (Second AC)\",\"safeRating\":\"Safe / CCTVs in coaches\",\"approxFare\":950}],\"itinerary\":[{\"dayNumber\":1,\"theme\":\"Arrival, Check-in & Evening Heritage Walk\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Check-in & Settle Down\",\"description\":\"Arrive at the hotel/hostel in Tokyo, check-in, unpack and refresh.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore City Center\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":20},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":150},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":100}]},{\"dayNumber\":2,\"theme\":\"Sightseeing, Iconic Landmarks & Sunset Spot\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Morning Breakfast & Briefing\",\"description\":\"Enjoy traditional local breakfast nearby and plan the day's route.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore Historic Museum\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":20},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":150},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":100}]},{\"dayNumber\":3,\"theme\":\"Local Food Exploration & Traditional Shopping\",\"activities\":[{\"time\":\"09:00 AM\",\"title\":\"Morning Breakfast & Briefing\",\"description\":\"Enjoy traditional local breakfast nearby and plan the day's route.\",\"safetyTip\":\"Keep your luggage locked in hostel lockers.\",\"cost\":0},{\"time\":\"11:30 AM\",\"title\":\"Explore Scenic Park & Lake\",\"description\":\"Visit the landmark and admire the history and craftsmanship. Perfect for photos.\",\"safetyTip\":\"Beware of unauthorized tour guides requesting high commissions.\",\"cost\":20},{\"time\":\"03:30 PM\",\"title\":\"Lunch & Culinary Tour\",\"description\":\"Taste local delicacies and authentic street food at a highly-rated hygiene-first eatery.\",\"safetyTip\":\"Drink only bottled mineral water.\",\"cost\":150},{\"time\":\"06:00 PM\",\"title\":\"Sunset Viewpoint or Evening Garden stroll\",\"description\":\"Watch the spectacular sunset and relax in a tranquil park environment.\",\"safetyTip\":\"Prefer cashless digital payments (UPI/Cards) over carrying heavy cash.\",\"cost\":100}]}],\"accommodations\":[{\"name\":\"Zostel Tokyo\",\"area\":\"Central safe neighborhood\",\"safeForSoloTravelers\":\"Highly Safe (24/7 Security)\",\"type\":\"Hostel\",\"approxPriceRange\":\"₹600 - ₹900\",\"reason\":\"Social atmosphere, modern security card locks, very popular among backpackers.\"},{\"name\":\"Tokyo Heritage Inn\",\"area\":\"Safe tourist corridor\",\"safeForSoloTravelers\":\"Safe (Family-run)\",\"type\":\"Hotel\",\"approxPriceRange\":\"₹1000 - ₹1500\",\"reason\":\"Highly rated on security, cozy private rooms, helpful local manager.\"}],\"localTransport\":[{\"mode\":\"Tokyo Metro / E-Rickshaws\",\"costEstimate\":\"₹20 - ₹50 per trip\",\"description\":\"Cheap, fast and environmentally friendly way to get around town.\",\"safetyTip\":\"Highly crowded during rush hours, separate sections/coaches are available.\"},{\"mode\":\"Prepaid Autos / App Cabs\",\"costEstimate\":\"₹100 - ₹250 per trip\",\"description\":\"Convenient point-to-point transit from local stations and hotels.\",\"safetyTip\":\"Always confirm the ride match OTP or fare before getting in.\"}],\"mapPins\":[{\"name\":\"City Center\",\"lat\":23.0225,\"lng\":72.5714,\"description\":\"A bustling central spot to explore local culture.\",\"day\":1},{\"name\":\"Historic Museum\",\"lat\":23.0375,\"lng\":72.5614,\"description\":\"Explore local historical exhibits and arts.\",\"day\":1},{\"name\":\"Scenic Park & Lake\",\"lat\":23.0025,\"lng\":72.5914,\"description\":\"Relaxing views and peaceful evening walks.\",\"day\":2},{\"name\":\"Local Street Market\",\"lat\":23.0325,\"lng\":72.6014,\"description\":\"Famous for traditional shopping and local street food.\",\"day\":2},{\"name\":\"Botanical Garden\",\"lat\":22.9925,\"lng\":72.5514,\"description\":\"A lush green environment with exotic flora.\",\"day\":3}],\"budgetBreakdown\":{\"stay\":2400,\"food\":1500,\"transport\":1200,\"activities\":900,\"miscellaneous\":600},\"packingList\":[\"Comfortable walking shoes\",\"Power bank & charger\",\"Modest clothing for spiritual sites\",\"Personal medicine kit\",\"Refillable water bottle\",\"Digital copies of identity documents\"]}",
+    "_id": "c4b7c40f4b18d64409a5009f",
+    "createdAt": "2026-07-17T17:52:35.864Z",
+    "updatedAt": "2026-07-17T17:52:35.864Z"
+  },
+  {
+    "startLocation": "Lucknow",
     "destination": "jaipur",
     "days": "3",
     "budget": "Low",

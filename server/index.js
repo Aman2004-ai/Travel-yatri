@@ -11,7 +11,9 @@ app.use(express.json());
 
 // Routes
 const tripRoutes = require("./routes/trip");
+const authRoutes = require("./routes/auth");
 app.use("/api/trips", tripRoutes);
+app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
   res.send("TravelYatri API is running");

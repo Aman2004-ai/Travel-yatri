@@ -70,6 +70,7 @@ const tripSchema = new mongoose.Schema(
     },
     packingList: [String],
     rawTextItinerary: { type: String },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   },
   { timestamps: true }
 );

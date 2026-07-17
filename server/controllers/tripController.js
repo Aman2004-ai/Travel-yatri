@@ -138,6 +138,10 @@ const generateTrip = async (req, res) => {
       rawTextItinerary,
     };
 
+    if (req.user) {
+      tripData.user = req.user.id;
+    }
+
     let trip;
     if (isMongoConnected) {
       trip = new Trip(tripData);
@@ -162,7 +166,7 @@ const getAllTrips = async (req, res) => {
   try {
     const isMongoConnected = mongoose.connection.readyState === 1;
     if (isMongoConnected) {
-      const trips = await Trip.find().sort({ createdAt: -1 });
+      const trips = await Trip.find({ user: req.user.id }).sort({ createdAt: -1 });
       res.status(200).json(trips);
     } else {
       const trips = getAllTripsLocal();
@@ -326,6 +330,36 @@ const getLeaderboard = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Failed to fetch leaderboard", error: error.message });
   }
+// Link an anonymous trip to the logged-in user
+const saveTripToAccount = async (req, res) => {
+  const { tripId } = req.body;
+  if (!tripId) {
+    return res.status(400).json({ message: "Trip ID is required" });
+  }
+
+  try {
+    const isMongoConnected = mongoose.connection.readyState === 1;
+    if (isMongoConnected) {
+      const trip = await Trip.findById(tripId);
+      if (!trip) {
+        return res.status(404).json({ message: "Trip not found" });
+      }
+
+      // If the trip already belongs to someone else
+      if (trip.user && trip.user.toString() !== req.user.id) {
+        return res.status(403).json({ message: "This trip belongs to another account" });
+      }
+
+      trip.user = req.user.id;
+      await trip.save();
+
+      res.status(200).json({ message: "Trip successfully linked to your account", trip });
+    } else {
+      res.status(400).json({ message: "MongoDB is offline, cannot link account" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: "Failed to save trip to account", error: error.message });
+  }
 };
 
 module.exports = {
@@ -337,5 +371,6 @@ module.exports = {
   getGemsByDestination,
   createGem,
   getLeaderboard,
+  saveTripToAccount,
 };
 

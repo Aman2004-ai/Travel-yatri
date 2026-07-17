@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "../context/AuthContext";
 
 function SavedTrips() {
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { user, loading: authLoading } = useAuth();
 
   useEffect(() => {
     const fetchTrips = async () => {
+      if (!user) return;
       try {
         const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/trips`);
         setTrips(res.data);
@@ -17,8 +20,10 @@ function SavedTrips() {
         setLoading(false);
       }
     };
-    fetchTrips();
-  }, []);
+    if (!authLoading) {
+      fetchTrips();
+    }
+  }, [user, authLoading]);
 
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this trip itinerary?")) return;
@@ -29,6 +34,54 @@ function SavedTrips() {
       console.error("Delete failed:", err);
     }
   };
+
+  if (authLoading)
+    return (
+      <div className="flex justify-center items-center min-h-[60vh] relative z-10">
+        <div className="text-center space-y-4">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-teal-400 mx-auto" />
+          <p className="text-gray-400 font-semibold font-mono text-sm">Authenticating session...</p>
+        </div>
+      </div>
+    );
+
+  if (!user) {
+    return (
+      <div className="min-h-[80vh] flex items-center justify-center px-6 relative select-none">
+        {/* Glow background */}
+        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-teal-500/5 blur-[100px] pointer-events-none -z-10" />
+        
+        <div className="w-full max-w-md bg-gray-900/40 border border-white/5 rounded-3xl p-8 shadow-2xl relative backdrop-blur-2xl text-center space-y-6">
+          <div className="absolute -inset-px bg-gradient-to-br from-teal-500/10 to-transparent rounded-3xl pointer-events-none" />
+          <div className="text-6xl animate-bounce">🔒</div>
+          <div className="space-y-2">
+            <h1 className="text-2xl font-syne font-black uppercase tracking-tight text-white">
+              Private Dashboard
+            </h1>
+            <p className="text-gray-400 text-xs font-medium max-w-sm mx-auto leading-relaxed">
+              Saved Trips are reserved for registered users. Log in or create a free account to view and manage your custom travel plans.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 pt-2">
+            <Link
+              to="/login"
+              state={{ from: { pathname: "/saved" } }}
+              className="py-3.5 bg-teal-500 text-teal-950 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-teal-400 transition-all cursor-none"
+            >
+              Log In Account
+            </Link>
+            <Link
+              to="/register"
+              state={{ from: { pathname: "/saved" } }}
+              className="py-3.5 bg-white/5 border border-white/10 text-white rounded-xl text-xs font-black uppercase tracking-widest hover:bg-white/10 transition-all cursor-none"
+            >
+              Sign Up Free
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (loading)
     return (
