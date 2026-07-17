@@ -1,6 +1,199 @@
 [
   {
     "startLocation": "Lucknow",
+    "destination": "jaipur",
+    "days": "3",
+    "budget": "Low",
+    "travelers": "Couple",
+    "trains": [
+      {
+        "trainNo": "14863",
+        "trainName": "Marudhar Express",
+        "departureTime": "22:00",
+        "arrivalTime": "11:30",
+        "duration": "13h 30m",
+        "classRecommend": "3A (Third AC) for safety and comfort",
+        "safeRating": "Highly Safe / CCTV in coaches",
+        "approxFare": 1050
+      },
+      {
+        "trainNo": "19402",
+        "trainName": "LKO ADI Express",
+        "departureTime": "22:55",
+        "arrivalTime": "12:55",
+        "duration": "14h 00m",
+        "classRecommend": "3A (Third AC)",
+        "safeRating": "Safe / Regular Patrolled",
+        "approxFare": 1050
+      }
+    ],
+    "itinerary": [
+      {
+        "dayNumber": 1,
+        "theme": "Walled City Exploration & Sunset",
+        "activities": [
+          {
+            "time": "12:00 PM",
+            "title": "Hotel Check-in & Refresh",
+            "description": "Check into the budget-friendly hotel, freshen up after the train journey.",
+            "safetyTip": "Book a verified pre-paid auto or cab from Jaipur Junction app-based kiosks to avoid scams.",
+            "cost": 0
+          },
+          {
+            "time": "02:30 PM",
+            "title": "Hawa Mahal & City Palace Complex",
+            "description": "Visit the iconic Palace of Winds and stroll through the majestic courtyards of the adjacent City Palace.",
+            "safetyTip": "Keep bags zipped in crowded market areas around Hawa Mahal. Buy a composite ticket to save money.",
+            "cost": 400
+          },
+          {
+            "time": "05:30 PM",
+            "title": "Sunset at Nahargarh Fort",
+            "description": "Head up to Nahargarh Fort for a breathtaking panoramic view of the Pink City sunset.",
+            "safetyTip": "Avoid staying at the fort isolated areas after dark; book a round-trip auto/cab beforehand.",
+            "cost": 200
+          }
+        ]
+      },
+      {
+        "dayNumber": 2,
+        "theme": "Forts & Heritage Trail",
+        "activities": [
+          {
+            "time": "09:00 AM",
+            "title": "Amer Fort Expedition",
+            "description": "Explore the grand ramparts, Sheesh Mahal (Mirror Palace), and stunning Rajput architecture of Amer.",
+            "safetyTip": "Use official licensed guides only. Avoid touts offering cheap gem shopping deals nearby.",
+            "cost": 300
+          },
+          {
+            "time": "01:30 PM",
+            "title": "Lunch at Jal Mahal View Point",
+            "description": "Enjoy cheap local street eats or a budget lunch with a stunning view of the Water Palace.",
+            "safetyTip": "Stick to busy food stalls with high turnover for safe, hygienic local food.",
+            "cost": 300
+          },
+          {
+            "time": "04:00 PM",
+            "title": "Shopping at Bapu & Johri Bazaar",
+            "description": "Walk hand-in-hand through historic bazaars shopping for handicrafts, block prints, and safe souvenirs.",
+            "safetyTip": "Politely decline persistent street vendors. Stick together in crowded lanes.",
+            "cost": 0
+          }
+        ]
+      },
+      {
+        "dayNumber": 3,
+        "theme": "Art, Science & Departure",
+        "activities": [
+          {
+            "time": "09:30 AM",
+            "title": "Albert Hall Museum",
+            "description": "Visit Rajasthan's oldest museum to admire ancient artifacts, paintings, and the famous Egyptian Mummy.",
+            "safetyTip": "The garden outside is beautiful but keep personal belongings close while taking photos.",
+            "cost": 150
+          },
+          {
+            "time": "12:00 PM",
+            "title": "Jantar Mantar Observatory",
+            "description": "Explore the UNESCO World Heritage site featuring the world's largest stone sundial.",
+            "safetyTip": "Carry umbrellas or hats as there is minimal shade in the observatory complex.",
+            "cost": 200
+          },
+          {
+            "time": "04:00 PM",
+            "title": "Birla Mandir & Evening Transit",
+            "description": "Visit the peaceful white marble temple before heading back to the railway station for your return train.",
+            "safetyTip": "Leave footwear in the designated safe-keeping area inside the temple complex.",
+            "cost": 0
+          }
+        ]
+      }
+    ],
+    "accommodations": [
+      {
+        "name": "Moustache Hostel & Coworking",
+        "area": "MI Road (Safe, couple-friendly, central)",
+        "safeForSoloTravelers": "Highly Safe",
+        "type": "Boutique Hostel (Private Double Room)",
+        "approxPriceRange": "₹1500 - ₹2000 per night",
+        "reason": "Highly rated security, vibrant social community, private couple rooms, and walking distance to transit hubs."
+      },
+      {
+        "name": "Zostel Jaipur",
+        "area": "Near Hawa Mahal (Walled City)",
+        "safeForSoloTravelers": "Highly Safe",
+        "type": "Hostel (Private Room)",
+        "approxPriceRange": "₹1600 - ₹2200 per night",
+        "reason": "Safe, couple-friendly vibe, excellent terrace cafe, and zero-hassle access to top sights."
+      }
+    ],
+    "localTransport": [
+      {
+        "mode": "Jaipur Metro",
+        "costEstimate": "₹6 - ₹20 per trip",
+        "description": "Super fast, safe, and air-conditioned connectivity from Railway Station to Chandpole (Walled City).",
+        "safetyTip": "Best and cheapest option to beat traffic during peak hours."
+      },
+      {
+        "mode": "E-rickshaws",
+        "costEstimate": "₹30 - ₹60 per shared trip",
+        "description": "Readily available eco-friendly options for short hops inside the crowded old city lanes.",
+        "safetyTip": "Always negotiate and fix the price with the driver before boarding."
+      }
+    ],
+    "mapPins": [
+      {
+        "name": "Hawa Mahal",
+        "lat": 26.9239,
+        "lng": 75.8267,
+        "description": "Palace of Winds, excellent photo spot.",
+        "day": 1
+      },
+      {
+        "name": "Nahargarh Fort",
+        "lat": 26.9374,
+        "lng": 75.8156,
+        "description": "High-altitude fort famous for sunsets.",
+        "day": 1
+      },
+      {
+        "name": "Amer Fort",
+        "lat": 26.9855,
+        "lng": 75.8513,
+        "description": "Majestic hilltop fortress outside the city.",
+        "day": 2
+      },
+      {
+        "name": "Albert Hall Museum",
+        "lat": 26.9116,
+        "lng": 75.8195,
+        "description": "Stunning Indo-Saracenic museum architecture.",
+        "day": 3
+      }
+    ],
+    "budgetBreakdown": {
+      "stay": 3600,
+      "food": 2400,
+      "transport": 1200,
+      "activities": 1600,
+      "miscellaneous": 1000
+    },
+    "packingList": [
+      "Comfortable walking shoes/sneakers",
+      "Light cotton clothing for daytime",
+      "Power bank for long sightseeing days",
+      "Sunscreen, sunglasses, and hats",
+      "Reusable water bottles",
+      "Hand sanitizer and wet wipes"
+    ],
+    "rawTextItinerary": "{\n  \"trains\": [\n    {\n      \"trainNo\": \"14863\",\n      \"trainName\": \"Marudhar Express\",\n      \"departureTime\": \"22:00\",\n      \"arrivalTime\": \"11:30\",\n      \"duration\": \"13h 30m\",\n      \"classRecommend\": \"3A (Third AC) for safety and comfort\",\n      \"safeRating\": \"Highly Safe / CCTV in coaches\",\n      \"approxFare\": 1050\n    },\n    {\n      \"trainNo\": \"19402\",\n      \"trainName\": \"LKO ADI Express\",\n      \"departureTime\": \"22:55\",\n      \"arrivalTime\": \"12:55\",\n      \"duration\": \"14h 00m\",\n      \"classRecommend\": \"3A (Third AC)\",\n      \"safeRating\": \"Safe / Regular Patrolled\",\n      \"approxFare\": 1050\n    }\n  ],\n  \"itinerary\": [\n    {\n      \"dayNumber\": 1,\n      \"theme\": \"Walled City Exploration & Sunset\",\n      \"activities\": [\n        {\n          \"time\": \"12:00 PM\",\n          \"title\": \"Hotel Check-in & Refresh\",\n          \"description\": \"Check into the budget-friendly hotel, freshen up after the train journey.\",\n          \"safetyTip\": \"Book a verified pre-paid auto or cab from Jaipur Junction app-based kiosks to avoid scams.\",\n          \"cost\": 0\n        },\n        {\n          \"time\": \"02:30 PM\",\n          \"title\": \"Hawa Mahal & City Palace Complex\",\n          \"description\": \"Visit the iconic Palace of Winds and stroll through the majestic courtyards of the adjacent City Palace.\",\n          \"safetyTip\": \"Keep bags zipped in crowded market areas around Hawa Mahal. Buy a composite ticket to save money.\",\n          \"cost\": 400\n        },\n        {\n          \"time\": \"05:30 PM\",\n          \"title\": \"Sunset at Nahargarh Fort\",\n          \"description\": \"Head up to Nahargarh Fort for a breathtaking panoramic view of the Pink City sunset.\",\n          \"safetyTip\": \"Avoid staying at the fort isolated areas after dark; book a round-trip auto/cab beforehand.\",\n          \"cost\": 200\n        }\n      ]\n    },\n    {\n      \"dayNumber\": 2,\n      \"theme\": \"Forts & Heritage Trail\",\n      \"activities\": [\n        {\n          \"time\": \"09:00 AM\",\n          \"title\": \"Amer Fort Expedition\",\n          \"description\": \"Explore the grand ramparts, Sheesh Mahal (Mirror Palace), and stunning Rajput architecture of Amer.\",\n          \"safetyTip\": \"Use official licensed guides only. Avoid touts offering cheap gem shopping deals nearby.\",\n          \"cost\": 300\n        },\n        {\n          \"time\": \"01:30 PM\",\n          \"title\": \"Lunch at Jal Mahal View Point\",\n          \"description\": \"Enjoy cheap local street eats or a budget lunch with a stunning view of the Water Palace.\",\n          \"safetyTip\": \"Stick to busy food stalls with high turnover for safe, hygienic local food.\",\n          \"cost\": 300\n        },\n        {\n          \"time\": \"04:00 PM\",\n          \"title\": \"Shopping at Bapu & Johri Bazaar\",\n          \"description\": \"Walk hand-in-hand through historic bazaars shopping for handicrafts, block prints, and safe souvenirs.\",\n          \"safetyTip\": \"Politely decline persistent street vendors. Stick together in crowded lanes.\",\n          \"cost\": 0\n        }\n      ]\n    },\n    {\n      \"dayNumber\": 3,\n      \"theme\": \"Art, Science & Departure\",\n      \"activities\": [\n        {\n          \"time\": \"09:30 AM\",\n          \"title\": \"Albert Hall Museum\",\n          \"description\": \"Visit Rajasthan's oldest museum to admire ancient artifacts, paintings, and the famous Egyptian Mummy.\",\n          \"safetyTip\": \"The garden outside is beautiful but keep personal belongings close while taking photos.\",\n          \"cost\": 150\n        },\n        {\n          \"time\": \"12:00 PM\",\n          \"title\": \"Jantar Mantar Observatory\",\n          \"description\": \"Explore the UNESCO World Heritage site featuring the world's largest stone sundial.\",\n          \"safetyTip\": \"Carry umbrellas or hats as there is minimal shade in the observatory complex.\",\n          \"cost\": 200\n        },\n        {\n          \"time\": \"04:00 PM\",\n          \"title\": \"Birla Mandir & Evening Transit\",\n          \"description\": \"Visit the peaceful white marble temple before heading back to the railway station for your return train.\",\n          \"safetyTip\": \"Leave footwear in the designated safe-keeping area inside the temple complex.\",\n          \"cost\": 0\n        }\n      ]\n    }\n  ],\n  \"accommodations\": [\n    {\n      \"name\": \"Moustache Hostel & Coworking\",\n      \"area\": \"MI Road (Safe, couple-friendly, central)\",\n      \"safeForSoloTravelers\": \"Highly Safe\",\n      \"type\": \"Boutique Hostel (Private Double Room)\",\n      \"approxPriceRange\": \"₹1500 - ₹2000 per night\",\n      \"reason\": \"Highly rated security, vibrant social community, private couple rooms, and walking distance to transit hubs.\"\n    },\n    {\n      \"name\": \"Zostel Jaipur\",\n      \"area\": \"Near Hawa Mahal (Walled City)\",\n      \"safeForSoloTravelers\": \"Highly Safe\",\n      \"type\": \"Hostel (Private Room)\",\n      \"approxPriceRange\": \"₹1600 - ₹2200 per night\",\n      \"reason\": \"Safe, couple-friendly vibe, excellent terrace cafe, and zero-hassle access to top sights.\"\n    }\n  ],\n  \"localTransport\": [\n    {\n      \"mode\": \"Jaipur Metro\",\n      \"costEstimate\": \"₹6 - ₹20 per trip\",\n      \"description\": \"Super fast, safe, and air-conditioned connectivity from Railway Station to Chandpole (Walled City).\",\n      \"safetyTip\": \"Best and cheapest option to beat traffic during peak hours.\"\n    },\n    {\n      \"mode\": \"E-rickshaws\",\n      \"costEstimate\": \"₹30 - ₹60 per shared trip\",\n      \"description\": \"Readily available eco-friendly options for short hops inside the crowded old city lanes.\",\n      \"safetyTip\": \"Always negotiate and fix the price with the driver before boarding.\"\n    }\n  ],\n  \"mapPins\": [\n    {\n      \"name\": \"Hawa Mahal\",\n      \"lat\": 26.9239,\n      \"lng\": 75.8267,\n      \"description\": \"Palace of Winds, excellent photo spot.\",\n      \"day\": 1\n    },\n    {\n      \"name\": \"Nahargarh Fort\",\n      \"lat\": 26.9374,\n      \"lng\": 75.8156,\n      \"description\": \"High-altitude fort famous for sunsets.\",\n      \"day\": 1\n    },\n    {\n      \"name\": \"Amer Fort\",\n      \"lat\": 26.9855,\n      \"lng\": 75.8513,\n      \"description\": \"Majestic hilltop fortress outside the city.\",\n      \"day\": 2\n    },\n    {\n      \"name\": \"Albert Hall Museum\",\n      \"lat\": 26.9116,\n      \"lng\": 75.8195,\n      \"description\": \"Stunning Indo-Saracenic museum architecture.\",\n      \"day\": 3\n    }\n  ],\n  \"budgetBreakdown\": {\n    \"stay\": 3600,\n    \"food\": 2400,\n    \"transport\": 1200,\n    \"activities\": 1600,\n    \"miscellaneous\": 1000\n  },\n  \"packingList\": [\n    \"Comfortable walking shoes/sneakers\",\n    \"Light cotton clothing for daytime\",\n    \"Power bank for long sightseeing days\",\n    \"Sunscreen, sunglasses, and hats\",\n    \"Reusable water bottles\",\n    \"Hand sanitizer and wet wipes\"\n  ]\n}\n",
+    "_id": "9e6ad11a906f9306273a3575",
+    "createdAt": "2026-07-17T04:00:09.079Z",
+    "updatedAt": "2026-07-17T04:00:09.079Z"
+  },
+  {
+    "startLocation": "Lucknow",
     "destination": "goa",
     "days": "2",
     "budget": "Medium",

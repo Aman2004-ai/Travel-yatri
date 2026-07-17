@@ -167,7 +167,7 @@ function Home() {
 
       {/* Kinetic Big Header Background (Outline text style) */}
       <div className="absolute top-24 left-1/2 -translate-x-1/2 select-none pointer-events-none text-[15vw] font-syne font-black text-white/[0.015] border-text border-white/[0.02] uppercase tracking-widest whitespace-nowrap z-0">
-        YATRABHAI
+        TRAVELYATRI
       </div>
 
       {/* Hero / Landing Grid */}
@@ -188,7 +188,7 @@ function Home() {
               </span>
             </h1>
             <p className="text-base md:text-lg text-gray-400 max-w-xl font-normal leading-relaxed">
-              Why browse 20 sites? Yatrabhai handles the logistics. We generate structured timelines, train schedules, lodging details, local transport guidelines, and maps in seconds.
+              Why browse 20 sites? TravelYatri handles the logistics. We generate structured timelines, train schedules, lodging details, local transport guidelines, and maps in seconds.
             </p>
           </div>
 

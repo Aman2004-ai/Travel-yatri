@@ -21,15 +21,15 @@ function Footer() {
     },
     localContributors: {
       title: "🏅 Local Contributors",
-      content: "The heart of Yatrabhai. A self-sustaining network where real locals contribute verified ground reality data, earn reward points, and unlock sponsored trips."
+      content: "The heart of TravelYatri. A self-sustaining network where real locals contribute verified ground reality data, earn reward points, and unlock sponsored trips."
     },
     aboutUs: {
-      title: "ℹ️ About Yatrabhai",
-      content: "Hazaron travel websites hain, par ghumne ka plan banana aaj bhi ek jhanjhat hai. Yatrabhai ek tools ka generic bundle nahi hai—yeh ek travel intelligence ecosystem hai jo planning fatigue aur outdated online reviews ki samasya ko solve karta hai. We combine generative AI with a community reward model to give you 100% authentic, regret-free journeys. Developed with ❤️ by Aman Jaiswal."
+      title: "ℹ️ About TravelYatri",
+      content: "Hazaron travel websites hain, par ghumne ka plan banana aaj bhi ek jhanjhat hai. TravelYatri ek tools ka generic bundle nahi hai—yeh ek travel intelligence ecosystem hai jo planning fatigue aur outdated online reviews ki samasya ko solve karta hai. We combine generative AI with a community reward model to give you 100% authentic, regret-free journeys. Developed with ❤️ by Aman Jaiswal."
     },
     contactSupport: {
       title: "✉️ Contact Support",
-      content: "Got feedback, found a bug, or want to join as a local contributor? Drop a line at support@yatrabhai.com. We respond faster than a local train."
+      content: "Got feedback, found a bug, or want to join as a local contributor? Drop a line at support@travelyatri.com. We respond faster than a local train."
     },
     privacyPolicy: {
       title: "🛡️ Privacy Policy",
@@ -37,7 +37,7 @@ function Footer() {
     },
     termsOfService: {
       title: "📝 Terms of Service",
-      content: "Yatrabhai is built for explorers. While our AI and local contributors work hard to provide highly accurate routes and budget estimates, we advise checking live platform schedules before departure."
+      content: "TravelYatri is built for explorers. While our AI and local contributors work hard to provide highly accurate routes and budget estimates, we advise checking live platform schedules before departure."
     },
     itineraryPlannerIndia: {
       title: "🗺️ Best Itinerary Planner India",
@@ -46,7 +46,7 @@ function Footer() {
     },
     femaleSafety: {
       title: "🛡️ Solo Female Travel Safety",
-      content: "Yatrabhai filters stay picks and transit modes based on ground safety indexes. We highlight verified female-only hostel dorms, dedicated train coaches, and well-lit routes. Click below to plan a safe Kerala solo trip!",
+      content: "TravelYatri filters stay picks and transit modes based on ground safety indexes. We highlight verified female-only hostel dorms, dedicated train coaches, and well-lit routes. Click below to plan a safe Kerala solo trip!",
       action: { label: "Plan Safe Kerala Trip 🌴", link: "/plan?destination=Kerala&travelers=Solo%20Female&days=5" }
     },
     irctcSchedules: {
@@ -75,15 +75,15 @@ function Footer() {
           <Link to="/" className="flex items-center gap-2.5 group">
             <span className="text-2xl group-hover:rotate-[25deg] transition-transform duration-300">🎒</span>
             <span className="text-xl font-syne font-extrabold tracking-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Yatra</span>
-              <span className="text-amber-400">bhai</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Travel</span>
+              <span className="text-amber-400">Yatri</span>
             </span>
           </Link>
           <p className="text-[10px] uppercase font-mono font-bold tracking-widest text-teal-400">
             YOUR REGRET-FREE TRAVEL COMPANION
           </p>
-          <p className="text-xs text-gray-405 leading-relaxed max-w-sm font-medium">
-            "Plan smarter, travel safer, and eliminate planning fatigue. Yatrabhai uses Agentic AI to coordinate itineraries, train routing, and budget constraints in seconds, backed by authentic ground-level insights from real local communities."
+          <p className="text-xs text-gray-450 leading-relaxed max-w-sm font-medium">
+            "Plan smarter, travel safer, and eliminate planning fatigue. TravelYatri uses Agentic AI to coordinate itineraries, train routing, and budget constraints in seconds, backed by authentic ground-level insights from real local communities."
           </p>
         </div>
 
@@ -182,7 +182,7 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-6xl mx-auto px-6 border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-gray-500 font-bold uppercase tracking-wider">
         <div>
-          © 2026 Yatrabhai. All rights reserved.
+          © 2026 TravelYatri. All rights reserved.
         </div>
         <div className="flex gap-4">
           <span>Built for Regret-Free Adventures</span>

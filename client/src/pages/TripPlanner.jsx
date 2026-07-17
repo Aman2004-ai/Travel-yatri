@@ -151,7 +151,7 @@ function TripPlanner() {
 
           <div className="space-y-2">
             <h2 className="text-2xl font-syne font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-amber-400">
-              Yatrabhai Travel Engine
+              TravelYatri Travel Engine
             </h2>
             <p className="text-[10px] text-gray-500 font-mono font-bold uppercase tracking-widest">
               Compiling your regret-free travel itinerary
@@ -211,7 +211,7 @@ function TripPlanner() {
               Create Travel Plan
             </h1>
             <p className="text-gray-400 text-sm max-w-md mx-auto">
-              Fill in your logistics, and Yatrabhai AI will prepare your end-to-end trip details.
+              Fill in your logistics, and TravelYatri AI will prepare your end-to-end trip details.
             </p>
           </div>
 

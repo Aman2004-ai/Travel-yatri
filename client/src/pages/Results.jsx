@@ -232,7 +232,7 @@ function Results() {
 
   // WhatsApp Exporter
   const handleWhatsAppShare = () => {
-    let shareText = `*Yatrabhai AI Travel Plan: ${trip.destination}* 🎒\n`;
+    let shareText = `*TravelYatri AI Travel Plan: ${trip.destination}* 🎒\n`;
     shareText += `📅 Days: ${trip.days} | 🚩 Origin: ${trip.startLocation || "Lucknow"} | 💰 Budget: ${trip.budget}\n\n`;
 
     localItinerary.forEach((day) => {
@@ -244,7 +244,7 @@ function Results() {
       shareText += `\n`;
     });
 
-    shareText += `Build your regret-free travel plan on Yatrabhai! ✨`;
+    shareText += `Build your regret-free travel plan on TravelYatri! ✨`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`, "_blank");
   };
 
@@ -1281,7 +1281,7 @@ function Results() {
         {/* Print Header */}
         <div className="border-b-4 border-teal-700 pb-4 mb-6">
           <h1 className="text-3xl font-extrabold uppercase tracking-tight text-teal-800">
-            YATRABHAI AI Travel Companion
+            TRAVELYATRI AI Travel Companion
           </h1>
           <p className="text-sm font-semibold text-gray-600">
             Your Regret-Free Travel Plan to {trip.destination}

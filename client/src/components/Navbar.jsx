@@ -15,8 +15,8 @@ function Navbar() {
         <Link to="/" className="flex items-center gap-2.5 group">
           <span className="text-2xl group-hover:rotate-[25deg] transition-transform duration-300">🎒</span>
           <span className="text-xl font-syne font-extrabold tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Yatra</span>
-            <span className="text-amber-400">bhai</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Travel</span>
+            <span className="text-amber-400">Yatri</span>
           </span>
         </Link>
         <div className="flex gap-8">
