@@ -7,8 +7,8 @@ function Navbar() {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/plan", label: "Plan a Trip" },
-    { path: "/saved", label: "Saved Trips" },
+    { path: "/plan", label: "Plan", suffix: " a Trip" },
+    { path: "/saved", label: "Saved", suffix: " Trips" },
   ];
 
   return (
@@ -21,8 +21,8 @@ function Navbar() {
             <span className="text-amber-400">Yatri</span>
           </span>
         </Link>
-        <div className="flex items-center gap-6 md:gap-8">
-          <div className="flex gap-5 md:gap-8">
+        <div className="flex items-center gap-3 sm:gap-6 md:gap-8">
+          <div className="flex gap-3 sm:gap-5 md:gap-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
@@ -36,6 +36,7 @@ function Navbar() {
                   }`}
                 >
                   {link.label}
+                  {link.suffix && <span className="hidden sm:inline">{link.suffix}</span>}
                   {isActive && (
                     <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-400 to-amber-400 rounded-full shadow-[0_0_12px_rgba(20,184,166,0.6)]" />
                   )}
