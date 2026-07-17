@@ -14,22 +14,22 @@ function Navbar() {
   return (
     <nav className="bg-gray-950/50 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="text-2xl group-hover:rotate-[25deg] transition-transform duration-300">🎒</span>
-          <span className="text-xl font-syne font-extrabold tracking-tight">
+        <Link to="/" className="flex items-center gap-1.5 sm:gap-2.5 group">
+          <span className="text-xl sm:text-2xl group-hover:rotate-[25deg] transition-transform duration-300">🎒</span>
+          <span className="text-lg sm:text-xl font-syne font-extrabold tracking-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Travel</span>
             <span className="text-amber-400">Yatri</span>
           </span>
         </Link>
-        <div className="flex items-center gap-3 sm:gap-6 md:gap-8">
-          <div className="flex gap-3 sm:gap-5 md:gap-8">
+        <div className="flex items-center gap-2.5 sm:gap-6 md:gap-8">
+          <div className="flex gap-2 sm:gap-5 md:gap-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-[11px] md:text-xs font-bold tracking-widest uppercase transition-all duration-300 relative py-1 ${
+                  className={`text-[9px] sm:text-[11px] md:text-xs font-bold tracking-wider sm:tracking-widest uppercase transition-all duration-300 relative py-1 ${
                     isActive
                       ? "text-teal-400"
                       : "text-gray-400 hover:text-white"
@@ -52,7 +52,7 @@ function Navbar() {
               </span>
               <button
                 onClick={logout}
-                className="text-[10px] font-black uppercase tracking-widest text-rose-450 bg-rose-500/10 border border-rose-500/25 px-2.5 py-1.5 rounded-xl hover:bg-rose-500/20 transition-all cursor-none"
+                className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider sm:tracking-widest text-rose-455 bg-rose-500/10 border border-rose-500/25 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg sm:rounded-xl hover:bg-rose-500/20 transition-all cursor-none"
               >
                 Logout
               </button>
@@ -60,7 +60,7 @@ function Navbar() {
           ) : (
             <Link
               to="/login"
-              className="text-[10px] font-black uppercase tracking-widest text-teal-450 bg-teal-500/10 border border-teal-500/25 px-3 py-1.5 rounded-xl hover:bg-teal-500/20 transition-all cursor-none"
+              className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider sm:tracking-widest text-teal-455 bg-teal-500/10 border border-teal-500/25 px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl hover:bg-teal-500/20 transition-all cursor-none"
             >
               Login
             </Link>
