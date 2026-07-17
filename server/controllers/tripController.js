@@ -8,6 +8,25 @@ const { generateMockTrip } = require("../utils/mockGenerator");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
+const ensureArray = (val) => {
+  if (!val) return [];
+  if (Array.isArray(val)) return val;
+  if (typeof val === "string") {
+    try {
+      const parsed = JSON.parse(val);
+      if (Array.isArray(parsed)) return parsed;
+    } catch (e) {
+      try {
+        const parsedJS = new Function("return " + val)();
+        if (Array.isArray(parsedJS)) return parsedJS;
+      } catch (err) {
+        console.error("Failed to parse stringified array:", val);
+      }
+    }
+  }
+  return [];
+};
+
 // Generate AI trip itinerary
 const generateTrip = async (req, res) => {
   const { startLocation, destination, days, budget, travelers } = req.body;
@@ -84,19 +103,18 @@ const generateTrip = async (req, res) => {
             "name": "Sabarmati Ashram",
             "lat": 23.0603,
             "lng": 72.5808,
-            "description": "Historic residence of Mahatma Gandhi along the Sabarmati river.",
+            "description": "Historical ashram of Mahatma Gandhi along Sabarmati river.",
             "day": 1
           }
         ],
         "budgetBreakdown": {
           "stay": 4000,
-          "food": 3000,
-          "transport": 3500,
-          "activities": 2500,
-          "miscellaneous": 2000
+          "food": 2500,
+          "transport": 1500,
+          "activities": 1000,
+          "miscellaneous": 1000
         },
         "packingList": [
-          "Comfortable walking shoes",
           "Power bank",
           "Modest clothing for temples",
           "Water bottle",
@@ -128,13 +146,13 @@ const generateTrip = async (req, res) => {
       days,
       budget: budget || "Medium",
       travelers: travelers || "Solo",
-      trains: data.trains || [],
-      itinerary: data.itinerary || [],
-      accommodations: data.accommodations || [],
-      localTransport: data.localTransport || [],
-      mapPins: data.mapPins || [],
+      trains: ensureArray(data.trains),
+      itinerary: ensureArray(data.itinerary),
+      accommodations: ensureArray(data.accommodations),
+      localTransport: ensureArray(data.localTransport),
+      mapPins: ensureArray(data.mapPins),
       budgetBreakdown: data.budgetBreakdown || {},
-      packingList: data.packingList || [],
+      packingList: ensureArray(data.packingList),
       rawTextItinerary,
     };
 
