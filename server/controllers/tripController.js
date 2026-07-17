@@ -330,6 +330,8 @@ const getLeaderboard = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Failed to fetch leaderboard", error: error.message });
   }
+};
+
 // Link an anonymous trip to the logged-in user
 const saveTripToAccount = async (req, res) => {
   const { tripId } = req.body;
